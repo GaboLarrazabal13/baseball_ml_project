@@ -1,0 +1,32 @@
+# 1. Entorno Virtual (Virtual Environment)
+# Ignora la carpeta del entorno virtual que contiene todas las librerías instaladas
+venv/
+.venv/
+
+# 2. Datos (Data)
+# Ignora los datos crudos y procesados. Solo el código para generarlos debe estar en Git.
+data/raw/
+data/processed/
+
+# 3. Modelos Entrenados (Artifacts)
+# Ignora el modelo serializado, ya que suele ser grande y puede cambiar a menudo.
+models/
+
+# 4. Archivos de Configuración Sensibles
+# IGNORA las claves de API, contraseñas, o cualquier secreto.
+config/api_keys.py
+# O si usas un archivo .env
+.env
+
+# 5. Logs y Cache
+# Ignora archivos de registro generados durante la ejecución
+*.log
+__pycache__/
+.ipynb_checkpoints/
+
+# 6. Archivos Temporales del Sistema Operativo
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
